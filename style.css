@@ -1,0 +1,397 @@
+@font-face {
+    font-family: 'monument';
+    src: url('MonumentExtended-Regular.otf')
+    }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+}
+#main{
+    height: fit-content;
+    width: 100%;
+    background-color: #F8F8F8;
+    position: relative;
+    padding-top: 0.1px;
+}
+
+/* Navigation bar CSS */
+#navbar{
+    height: 12vh;
+    width: 100%;
+    margin-top: 30px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#navbar h1{
+    height: 100%;
+    width: 24%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monument;
+    letter-spacing: -2px;
+    font-size: 36px;
+    font-weight: 700;
+    position: relative;
+    cursor: pointer;
+}
+#navbar h2{
+    height: 100%;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 2px solid black;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+}
+#navbar h2:nth-last-child(2){
+    width: 20%;
+}
+#navbar h2:nth-last-child(3){
+    width: 28%;
+}
+#navbar h3{
+    display: none;
+}
+
+/* Video Addition CSS */
+#center{
+    width: 100%;
+    height: 83.7%;
+    padding: 3vw 6vw 2vw 6vw;
+}
+#container{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+#container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+#overlays{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    padding: 2vw;
+    color: white;
+    text-shadow: 1px 1px 1px #000;
+}
+.over1{
+    height: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.over1 h1{
+    font-size: 40px;
+    font-family: monument;
+    margin-bottom: 20px;
+}
+.over1 h2{
+    padding: 1.4rem 1.7rem;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.over2{
+    border-top: 2px solid white;
+    height: 50%;
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+}
+.over2 h3{
+    font-size: 1.2rem;
+    margin-top: 1.3rem;
+    font-weight: 500;
+}
+.over2 img{
+    margin-top: 1rem;
+    height: 3.2rem;
+}
+
+/* Scroll Animation CSS */
+#scroll{
+    height: 40vh;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#container-scroll{
+    height: 100%;
+    width: 165vh;
+    display: inline-block;
+    padding: 2vw;
+    animation-name: scroll;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#container-scroll img{
+    height: 25vh;
+    width: 25vh;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    margin-left: 15px;
+}
+
+/* Alphabet Container CSS */
+#alphabet{
+    height: 12vh;
+    width: 100%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+#alphabet h5{
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    border-bottom: 2px solid black;
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+#alphabet h6{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    padding: 0.2rem 0.7rem;
+    border-radius: 50%;
+    transition: 0.3 ease;
+    cursor: pointer;
+}
+#alphabet h6:hover{
+    border: 2px solid black;
+}
+
+/* Update Container CSS */
+#page2{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 3vw 4vw;
+}
+#page2>h1{
+    text-align: center;
+    font-family: monument;
+    font-size: 3vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 3vh;
+}
+.page2-elem{
+    width: 100%;
+    height: 9vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid black;
+    padding: 0 4rem;
+}
+.page2-elem:nth-last-child(1){
+    border-bottom: 2px solid black;
+}
+.page2-elem h4{
+    width: 6%;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+}
+.elem-part2{
+    width: 45%;
+}
+.elem-part2 h2{
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+.elem-part2 h5{
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.page2-elem:hover{
+    background-color: #d7d6d6;
+    cursor: pointer;
+}
+
+/* Marque Scroll Animation CSS */
+#marque{
+    margin-top: 5vh;
+    position: relative;
+    text-wrap: nowrap;
+    overflow: hidden;
+    padding: 1rem 1.2rem;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+#marque h1{
+    display: inline-block;
+    margin-right: 16px;
+    animation-name: scroll-1;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    font-size: 4rem;
+    font-family: monument;
+    letter-spacing: 4px;
+}
+
+
+/* Keyframes Animations */
+@keyframes scroll {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+@keyframes scroll-1 {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+
+
+/* Media Screen CSS */
+@media (max-width: 600px) {
+    body{
+        overflow-x: hidden;
+    }
+/* Media Navigation bar CSS */
+    #navbar{
+        height: 10vh;
+        margin-top: 15px;
+        border-top: 2px solid black;
+        padding: 0 3vw;
+    }
+    #navbar h1{
+        width: 20%;
+        display: flex;
+        justify-content: flex-start;
+        font-family: monument;
+        font-size: 2.2rem;
+        font-weight: 700;
+        position: relative;
+    }
+    #navbar h2{
+        display: none;
+    }
+    #navbar h3{
+        display: block;
+        font-size: 1.3rem;
+    }
+    
+    /* Media Video Addition CSS */
+    #center{
+        height: 70vh;
+        padding: 5vw 3vw;
+    }
+    #overlays{
+        width: 100%;
+        height: 35%;
+        padding: 2vw;
+    }
+    .over1{
+        height: 45%;
+    }
+    .over1 h1{
+        font-size: 7vw;
+        font-weight: 600;
+    }
+    .over1 h2{
+        padding: 1rem 1.3rem;
+        font-size: 5vw;
+    }
+    .over2 h3{
+        font-size: 1.2rem;
+    }
+    .over2 img{
+        margin-top: 1rem;
+        margin-right: 1.5vw;
+    }
+    
+    /* Media Scroll Animation CSS */
+    #scroll{
+        height: fit-content;
+    }
+    #container-scroll{
+        height: 100%;
+        width: 104vh;
+        display: inline-block;
+    }
+    #container-scroll img{
+        height: 15vh;
+        width: 15vh;
+    }
+    
+    /* Media Alphabet Container CSS */
+    #alphabet{
+        display: none;
+    }
+
+    /* Media Update Container CSS */
+    #page2{
+        height: fit-content;
+        padding: 5vw 4vw;
+    }
+    #page2>h1{
+        font-size: 9vw;
+        margin-bottom: 3vh;
+    }
+    .page2-elem{
+        height: 30vw;
+        padding: 0 1rem;
+    }
+    .page2-elem h4{
+        width: 25%;
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+    .elem-part2{
+        width: 70%;
+    }
+    .elem-part2 h2{
+        font-size: 1.4rem;
+    }
+    .elem-part2 h5{
+        font-size: 0.6rem;
+    }
+    /* Media Marque Scroll Animation CSS */
+    #marque{
+        margin-top: 4vh;
+    }
+    #marque h1{
+        -webkit-text-stroke: 1px black;
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+}
