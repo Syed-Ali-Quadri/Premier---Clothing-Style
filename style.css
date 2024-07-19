@@ -2,6 +2,10 @@
     font-family: 'monument';
     src: url('MonumentExtended-Regular.otf')
     }
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Regular.ttf')
+    }
 
 *{
     padding: 0;
